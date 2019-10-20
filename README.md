@@ -2,4 +2,4 @@
 
 Здесь будет размещены все исходники за все занятия
 
-* (Menu) [https://github.com/CITCourses/CIT_19_20/tree/master/menu]
+* [Menu](https://github.com/CITCourses/CIT_19_20/tree/master/menu)
