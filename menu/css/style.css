@@ -81,6 +81,10 @@ html, body {
   line-height: 40px;
 }
 
+.menu > ul > li > ul > li > a:hover {
+  background-color: #999;
+}
+
 .sanfont {
   font-family: 'GTA';
   font-size: 70px;
