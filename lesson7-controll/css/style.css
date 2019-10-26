@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.greenBlock {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  margin: 0 auto;
+}
