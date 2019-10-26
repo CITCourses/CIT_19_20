@@ -8,4 +8,6 @@ html, body {
   height: 500px;
   background-color: green;
   margin: 0 auto;
+  outline: 2px dotted black;
+  outline-offset: -15px;
 }
