@@ -25,3 +25,55 @@ html, body {
   background-color: yellow;
   margin: 0 auto;
 }
+
+.yellowBlock > table {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.yellowBlock > table tr:nth-child(1) > td:nth-child(1) {
+  background-color: white;
+  border: 2px solid red;
+}
+
+.yellowBlock > table tr:nth-child(1) > td:nth-child(2) {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.yellowBlock > table tr:nth-child(1) > td:nth-child(3) {
+  background-color: cyan;
+  border: 2px solid blue;
+}
+
+.yellowBlock > table tr:nth-child(2) > td:nth-child(1) {
+  background-color: violet;
+  border: 2px solid white;
+}
+
+.yellowBlock > table tr:nth-child(2) > td:nth-child(2) {
+  background-color: magenta;
+  border: 2px solid red;
+}
+
+.yellowBlock > table tr:nth-child(2) > td:nth-child(3) {
+  background-color: olive;
+  border: 2px solid purple;
+}
+
+.yellowBlock > table tr:nth-child(3) > td:nth-child(1) {
+  background-color: gold;
+  border: 2px solid cyan;
+}
+
+.yellowBlock > table tr:nth-child(3) > td:nth-child(2) {
+  background-color: lightblue;
+  border: 2px solid magenta;
+}
+
+.yellowBlock > table tr:nth-child(3) > td:nth-child(3) {
+  background-color: purple;
+  border: 2px solid pink;
+}
