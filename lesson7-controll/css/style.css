@@ -4,10 +4,17 @@ html, body {
 }
 
 .greenBlock {
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   background-color: green;
   margin: 0 auto;
   outline: 2px dotted black;
   outline-offset: -15px;
+  padding: 20px;
+}
+
+.greenBlock > h1 {
+  text-transform: uppercase;
+  color: yellow;
+  text-align: center;
 }
