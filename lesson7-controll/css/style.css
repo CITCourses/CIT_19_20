@@ -18,3 +18,10 @@ html, body {
   color: yellow;
   text-align: center;
 }
+
+.yellowBlock {
+  width: 400px;
+  height: 250px;
+  background-color: yellow;
+  margin: 0 auto;
+}
