@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.container > .sidebar {
+  width: 300px; 
+  height: 500px;  
+  float: left;
+  background-color: yellow;
+  overflow-y: scroll;
+}
+
+.container > .sidebar > ol {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.container > .sidebar > ol > li > ol {
+  list-style: upper-roman;
+  color: green;
+  font-size: 15px;
+}
+
+.container > .header {
+  width: 600px;
+  height: 100px; 
+  float: right;
+  background-image: url('../images/back.png');
+}
+
+.container > .header > h2 {
+  text-align: center;
+}
+
+.container > .content {
+  width: 600px; 
+  height: 400px; 
+  float: right; 
+  background-image: url('../images/calendar.png');
+  background-repeat: repeat-x;
+  background-size: 30px;
+  text-align: right;
+}
