@@ -10,3 +10,4 @@ Web:
 * [Урок 5.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson5-css) Занятие по CSS #2
 * [Урок 6.](https://github.com/CITCourses/CIT_19_20/tree/master/menu) Верстка меню
 * [Урок 7.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson7-controll) Контрольное занятие по HTML и CSS
+* [Урок 8.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson8-js) Задания по Javascript №1
