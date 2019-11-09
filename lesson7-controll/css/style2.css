@@ -47,3 +47,22 @@ html, body {
   background-size: 30px;
   text-align: right;
 }
+
+.container > .content > a:link {
+  color: green;
+  text-decoration: none;
+}
+
+.container > .content > a:hover {
+  color: red;
+  background-color: grey;
+  text-transform: uppercase;
+}
+
+.container > .content > a:visited {
+  background-color: yellow;
+}
+
+.container > .sidebar li:hover {
+  cursor: pointer;
+}
