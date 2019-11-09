@@ -24,7 +24,10 @@ pink.addEventListener('mouseout', pinkHandler);
 green.addEventListener('dblclick', greenHandler);
 
 const btn1Handler = () => {
-
+  if (block.style.opacity === '1' || block.style.opacity === '')
+    block.style.opacity = 0;
+  else 
+    block.style.opacity = 1;
 };
 
 const btn2Handler = () => {
