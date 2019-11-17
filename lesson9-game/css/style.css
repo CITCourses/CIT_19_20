@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#canv {
+  border: 1px solid #000;
+  background-color: #fff;
+}
