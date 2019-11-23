@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chat+</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <form id="usrForm">
+      <input type="text" placeholder="Enter your username..." id="usrIn">
+      <button id="usrBtn">Enter</button>
+    </form>
+
+    <ul id="display" style="display: none;"></ul>
+
+    <form id="form">
+      <input type="text" id="in1">
+      <button id="sendBtn">Send</button>  
+    </form>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
