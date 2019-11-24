@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+  </head>
+  <body>
+    <h1>Log In</h1>
+
+    <form>
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" id="username">
+      </div>
+      <div>
+        <button id="btnOK">OK</button>
+      </div>
+    </form>
+
+    <script>
+      const sendJSON = (url, json) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        const data = json;
+        xhr.send(data);
+      };
+
+      const btnOKHandler = (e) => {
+        e.preventDefault();
+
+        const user = {
+          name: username.value
+        };
+
+        sendJSON('/login', JSON.stringify(user));
+      };
+
+
+      btnOK.addEventListener('click', btnOKHandler);
+
+
+    </script>
+  </body>
+</html>
