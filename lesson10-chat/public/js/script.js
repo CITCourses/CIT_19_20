@@ -8,7 +8,8 @@ let username = '';
 const sendBtnHandler = (e) => {
   e.preventDefault();
   const message = username + ': ' + in1.value;
-  socket.emit('send message', message);
+  if (in1.value.trim() !== '')
+    socket.emit('send message', message);
   cash.push(in1.value);
   in1.value = '';
 };
