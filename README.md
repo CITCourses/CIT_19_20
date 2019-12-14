@@ -12,3 +12,4 @@ Web:
 * [Урок 7.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson7-controll) Контрольное занятие по HTML и CSS
 * [Урок 8.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson8-js) Задания по Javascript №1
 * [Урок 9.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson9-game) Работа с CANVAS. Создание игры Ping Pong
+* [Урок 10.](https://github.com/CITCourses/CIT_19_20/tree/master/lesson10-chat) Разработка чата на Web-сокетах
