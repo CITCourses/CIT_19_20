@@ -1,9 +1,10 @@
 'use strict';
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true});
+const Schema = mongoose.Schema;
+
 module.exports = (req, res, next) => {
-  const mongoose = require('mongoose');
-  mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true});
-  const Schema = mongoose.Schema;
 
   const User = mongoose.model('User', Schema({
     name: String,
