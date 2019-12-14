@@ -7,12 +7,15 @@ const server = http.createServer(app);
 const io = require('socket.io')(server);
 const api = require('./api.js');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true});
+const Schema = mongoose.Schema;
 
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/public'));
 app.use('/', api);
 
 io.on('connection', (socket) => {
