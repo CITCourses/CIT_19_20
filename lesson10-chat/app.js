@@ -8,24 +8,15 @@ const io = require('socket.io')(server);
 const api = require('./api.js');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const checkLogin = require('./middleware/checkLogin.js');
 
-app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
-app.use(checkLogin);
+
+app.use(express.static(__dirname + '/public'));
 app.use('/', api);
-
-io.on('connection', (socket) => {
-  console.log('user connected');
-
-  socket.on('send message', (msg) => {
-    io.emit('get message', msg);
-  });
-});
 
 server.listen(8000, () => {
   console.log('Listening on port 8000');

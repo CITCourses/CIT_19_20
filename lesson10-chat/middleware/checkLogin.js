@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = function (req, res, next) {
-  if (req.cookies && req.cookies.id)
+  if (!req.cookies.id)
+    return res.redirect('/login');
+    
     next();
-  else 
-    res.redirect('/login');
 };
