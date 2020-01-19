@@ -8,6 +8,12 @@ const io = require('socket.io')(server);
 const api = require('./api.js');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const path = require('path');
+
+// view ejs engine
+app.engine('ejs', require('ejs-locals'));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({
